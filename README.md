@@ -16,7 +16,10 @@ study-003,003_R1.fastq.gz,
 - Use `samplesheetgen.bb.clj` script (assuming you have babashka installed)
 
 ```
-$ samplesheetgen.bb.clj csv -i samplesheet_base.csv -o samplesheet.googlestrage.csv -p "gs:my-bucket"
+$ samplesheetgen.bb.clj csv \
+  -i samplesheet_base.csv \
+  -o samplesheet.googlestrage.csv \
+  -p "gs:my-bucket"
 ```
 
 - The new samplesheet would look like
